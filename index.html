@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <hr>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>
+                            <lable class="label" style="color: black">ENo</lable>
+                        </td>
+                        <td> 
+                            <input type="number" class="form-control" id="txtENo" placeholder="Enter ENo Here">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <lable class="label" style="color: black">EName</lable>
+                        </td>
+                        <td> 
+                            <input type="text" class="form-control" id="txtEName" placeholder="Enter EName Here">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <lable class="label" style="color: black">EAddress</lable>
+                        </td>
+                        <td> 
+                            <input type="text" class="form-control" id="txtEAddress" placeholder="Enter EAddress Here">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                          <center>
+                            <button type="button" onclick="AddRecord()" 
+                            class="btn btn-primary">Add Record
+                            </button>
+                            <button type="button" onclick="ClearBoxes()" 
+                            class="btn btn-info">Clear
+                            </button>
+                          </center>
+                        </td>
+                    </tr>
+                </table>
+                <div class="alert alert-success" id="divForMessages">
+                    
+                </div>
+            </div>
+           
+        
+          
+        <hr>
+        <div class="table-responsive">
+            <table id="myTable" class="table table-bordered">
+              
+            </table>
+           </div>
+    </div>
+</body>
+</html>
